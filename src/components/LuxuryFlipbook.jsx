@@ -5,18 +5,18 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // ✅ Pages
 const pages = [
-  "/images/page1.jpg",
-  "/images/page2.jpg",
-  "/images/page3.jpg",
-  "/images/page4.jpg",
-  "/images/page5.jpg",
-  "/images/page6.jpg",
-  "/images/page7.jpg",
-  "/images/page8.jpg",
-  "/images/page9.jpg",
-  "/images/page10.jpg",
-  "/images/page11.jpg",
-  "/images/page12.jpg",
+  "/images/H1.png",
+  "/images/H2.png",
+  "/images/H3.png",
+  "/images/H4.png",
+  "/images/H5.png",
+  "/images/H6.png",
+  "/images/H7.png",
+  "/images/H8.png",
+  "/images/H9.png",
+  "/images/H10.png",
+  "/images/H11.png",
+  "/images/H12.png",
 ];
 
 // ✅ PAGE COMPONENT (REALISTIC)
@@ -129,8 +129,8 @@ export default function LuxuryFlipbook() {
             <div className="absolute left-1 top-1 w-full h-full bg-black/10 blur-sm rounded-lg"></div>
 
             <HTMLFlipBook
-              width={isMobile ? 300 : 420}
-              height={isMobile ? 420 : 560}
+              width={isMobile ? window.innerWidth * 0.95 : 550}
+              height={isMobile ? window.innerHeight * 0.65 : 800}
               size="fixed"
               showCover={true}
               usePortrait={isMobile}

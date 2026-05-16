@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+import LuxuryFlipbook from "./components/LuxuryFlipbook";
+
+function App() {
+  return <div className="w-full flex justify-center items-center">
+  <div
+    style={{
+      transform: "scale(1.20)",   // ✅ simulates 125% zoom
+      transformOrigin: "center center"
+    }}
+  >
+    <LuxuryFlipbook />;
+  </div>
+</div>
+}
+
+export default App;
